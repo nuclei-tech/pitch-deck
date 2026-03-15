@@ -110,6 +110,50 @@
   a.toc-card{text-decoration:none;color:inherit;cursor:pointer}
   a.toc-card:hover{background:#f7f6f2}
 
+  /* MOBILE */
+  @media (max-width:600px){
+    .slide{padding:2rem 1.25rem;border-radius:0;border-left:none;border-right:none;min-height:100svh}
+
+    /* Cover */
+    .slide-cover{border-left:none;border-top:4px solid #6B7EC7}
+    .slide-cover-bg{width:100%;height:40%;top:auto;border-radius:0 0 12px 12px;object-fit:cover;object-position:bottom}
+    .cover-tagline{font-size:20px}
+    .cover-sub{font-size:13px}
+    .cover-stats{gap:1.5rem}
+
+    /* TOC */
+    .toc-grid{grid-template-columns:1fr 1fr}
+
+    /* Two-col → single col */
+    .two-col{grid-template-columns:1fr;gap:1.5rem}
+    .stat-grid{grid-template-columns:1fr 1fr}
+
+    /* Pillars → single col */
+    .pillar-grid{grid-template-columns:1fr}
+
+    /* Team → single col */
+    .team-grid{grid-template-columns:1fr}
+
+    /* Experience → single col */
+    .exp-grid{grid-template-columns:1fr}
+
+    /* Clients → 2 col */
+    .clients-grid{grid-template-columns:1fr 1fr;gap:.75rem}
+
+    /* Services → single col */
+    .services-grid{grid-template-columns:1fr}
+
+    /* Contact → single col */
+    .contact-layout{grid-template-columns:1fr;gap:2rem}
+
+    /* Slide 8 BMAD grid */
+    .bmad-grid{grid-template-columns:1fr 1fr!important}
+
+    /* Nav */
+    .nav-bar{width:calc(100% - 2rem);justify-content:space-between}
+    .slide-heading{font-size:18px}
+  }
+
   /* TECH STACK */
   .tech-stack{margin-top:2rem;padding-top:1.5rem;border-top:0.5px solid #e0ddd6}
   .tech-stack-label{font-size:11px;font-weight:500;letter-spacing:.1em;color:#999;text-transform:uppercase;margin-bottom:.75rem}
