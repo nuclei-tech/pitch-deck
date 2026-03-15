@@ -17,40 +17,42 @@
 <div class="deck">
 
 <!-- SLIDE 1: Cover -->
-<div class="slide slide-cover">
-  <div style="display:flex;align-items:center;gap:14px;margin-bottom:2rem">
-    <img src="logo.box.png" style="height:90px;width:auto">
+<div class="slide slide-cover" id="slide-cover">
+  <img src="bg.png" class="slide-cover-bg" style="object-fit:contain;object-position:center">
+  <div class="slide-cover-content">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:2rem">
+      <img src="logo.box.png" style="height:90px;width:auto">
     </div>
-  <p class="cover-tagline">Let's co-create your digital products!</p>
-  <p class="cover-sub">Our AI-assisted innovation, technology and experience, merged into your next software product — with over 10 years of expertise in startup to scale-up software product engineering.</p>
-  <div class="cover-stats">
-    <div class="cstat"><div class="val">10+</div><div class="lbl">Years in operation</div></div>
-    <div class="cstat"><div class="val">50+</div><div class="lbl">Projects delivered</div></div>
-    <div class="cstat"><div class="val">~20</div><div class="lbl">Team members</div></div>
-    <div class="cstat"><div class="val">3</div><div class="lbl">Countries served</div></div>
+    <p class="cover-tagline">Let's co-create your digital products!</p>
+    <p class="cover-sub">Our AI-assisted innovation, technology and experience, merged into your next software product — with over 10 years of expertise in startup to scale-up software product engineering.</p>
+    <div class="cover-stats">
+      <div class="cstat"><div class="val">10+</div><div class="lbl">Years in operation</div></div>
+      <div class="cstat"><div class="val">50+</div><div class="lbl">Projects delivered</div></div>
+      <div class="cstat"><div class="val">AI</div><div class="lbl">AI-assisted SDLC</div></div>
+    </div>
   </div>
-  <div class="slide-num">01 / 10</div>
+  <div class="slide-num">01 / 09</div>
 </div>
 
 <!-- SLIDE 2: TOC -->
-<div class="slide">
+<div class="slide" id="slide-toc">
   <p class="slide-label">Overview</p>
   <h2 class="slide-heading">What's inside</h2>
   <div class="accent-bar"></div>
   <div class="toc-grid">
-    <div class="toc-card"><span class="toc-num">01</span><div><p class="toc-title">About us</p><p class="toc-desc">Who we are and why we exist</p></div></div>
-    <div class="toc-card"><span class="toc-num">02</span><div><p class="toc-title">Client obsession</p><p class="toc-desc">Our partnership philosophy</p></div></div>
-    <div class="toc-card"><span class="toc-num">03</span><div><p class="toc-title">Our team</p><p class="toc-desc">The people behind the work</p></div></div>
-    <div class="toc-card"><span class="toc-num">04</span><div><p class="toc-title">Experience</p><p class="toc-desc">Industries & track record</p></div></div>
-    <div class="toc-card"><span class="toc-num">05</span><div><p class="toc-title">Our clients</p><p class="toc-desc">Brands we've worked with</p></div></div>
-    <div class="toc-card"><span class="toc-num">06</span><div><p class="toc-title">Services</p><p class="toc-desc">What we build and how</p></div></div>
-    <div class="toc-card"><span class="toc-num">07</span><div><p class="toc-title">Contact us</p><p class="toc-desc">Let's start a conversation</p></div></div>
+    <a class="toc-card" href="#slide-about" onclick="navigateTo('slide-about');return false"><span class="toc-num">01</span><div><p class="toc-title">About us</p><p class="toc-desc">Who we are and why we exist</p></div></a>
+    <a class="toc-card" href="#slide-client-obsession" onclick="navigateTo('slide-client-obsession');return false"><span class="toc-num">02</span><div><p class="toc-title">Client obsession</p><p class="toc-desc">Our partnership philosophy</p></div></a>
+    <a class="toc-card" href="#slide-team" onclick="navigateTo('slide-team');return false"><span class="toc-num">03</span><div><p class="toc-title">Our team</p><p class="toc-desc">The people behind the work</p></div></a>
+    <a class="toc-card" href="#slide-experience" onclick="navigateTo('slide-experience');return false"><span class="toc-num">04</span><div><p class="toc-title">Experience</p><p class="toc-desc">Industries & track record</p></div></a>
+    <a class="toc-card" href="#slide-services" onclick="navigateTo('slide-services');return false"><span class="toc-num">05</span><div><p class="toc-title">Services</p><p class="toc-desc">What we build and how</p></div></a>
+    <a class="toc-card" href="#slide-ai-sdlc" onclick="navigateTo('slide-ai-sdlc');return false"><span class="toc-num">06</span><div><p class="toc-title">AI-assisted SDLC</p><p class="toc-desc">How we leverage AI in delivery</p></div></a>
+    <a class="toc-card" href="#slide-contact" onclick="navigateTo('slide-contact');return false"><span class="toc-num">07</span><div><p class="toc-title">Contact us</p><p class="toc-desc">Let's start a conversation</p></div></a>
   </div>
-  <div class="slide-num">02 / 10</div>
+  <div class="slide-num">02 / 09</div>
 </div>
 
 <!-- SLIDE 3: About Us -->
-<div class="slide">
+<div class="slide" id="slide-about">
   <p class="slide-label">About us</p>
   <h2 class="slide-heading">Who we are</h2>
   <div class="accent-bar"></div>
@@ -67,11 +69,11 @@
       <div class="stat-card"><p class="stat-val">USA · SG · LK</p><p class="stat-lbl">Countries served</p></div>
     </div>
   </div>
-  <div class="slide-num">03 / 10</div>
+  <div class="slide-num">03 / 09</div>
 </div>
 
 <!-- SLIDE 4: Client Obsession -->
-<div class="slide">
+<div class="slide" id="slide-client-obsession">
   <p class="slide-label">Our philosophy</p>
   <h2 class="slide-heading">We build with you, not just for you.</h2>
   <div class="accent-bar"></div>
@@ -102,11 +104,11 @@
   <div class="quote-block">
     <p class="quote-text">"Nuclei will spearhead the development of your product from inception all the way to production and beyond."</p>
   </div>
-  <div class="slide-num">04 / 10</div>
+  <div class="slide-num">04 / 09</div>
 </div>
 
 <!-- SLIDE 5: Team -->
-<div class="slide">
+<div class="slide" id="slide-team">
   <p class="slide-label">Our team</p>
   <h2 class="slide-heading">Leadership</h2>
   <div class="accent-bar"></div>
@@ -137,11 +139,11 @@
     </div>
   </div>
   <p style="font-size:13px;color:#888;margin-top:1.25rem">Supported by a team of ~20 engineers, designers, and delivery specialists based in Colombo, Sri Lanka.</p>
-  <div class="slide-num">05 / 10</div>
+  <div class="slide-num">05 / 09</div>
 </div>
 
 <!-- SLIDE 6: Experience -->
-<div class="slide">
+<div class="slide" id="slide-experience">
   <p class="slide-label">Experience</p>
   <h2 class="slide-heading">A proven track record</h2>
   <div class="accent-bar"></div>
@@ -161,46 +163,26 @@
       <p class="exp-title">InsureTech</p>
       <p class="exp-desc">Custom insurance platforms with complex business logic, compliance requirements, and seamless user experiences.</p>
     </div>
-    <div class="exp-card">
-      <div class="exp-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#6B7EC7" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="#6B7EC7" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-      <p class="exp-title">10 years in market</p>
-      <p class="exp-desc">Founded in 2015. Consistently delivering quality software across three continents for over a decade.</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="#6B7EC7" stroke-width="1.5"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="#6B7EC7" stroke-width="1.5"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="#6B7EC7" stroke-width="1.5"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="#6B7EC7" stroke-width="1.5"/></svg></div>
-      <p class="exp-title">50+ projects delivered</p>
-      <p class="exp-desc">From MVPs to enterprise platforms — consistently on-time, on-budget, and built to last.</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 3.6L14 5.5l-3 2.9.7 4.1L8 10.4l-3.7 2.1.7-4.1-3-2.9 4.2-.9z" stroke="#6B7EC7" stroke-width="1.3" stroke-linejoin="round"/></svg></div>
-      <p class="exp-title">2–3 yr client retention</p>
-      <p class="exp-desc">Clients stay. Our average engagement spans two to three years — a testament to trust and delivery quality.</p>
-    </div>
-  </div>
-  <div class="slide-num">06 / 10</div>
-</div>
 
-<!-- SLIDE 7: Clients -->
-<div class="slide">
-  <p class="slide-label">Our clients</p>
-  <h2 class="slide-heading">Trusted by</h2>
+  </div>
+
   <div class="accent-bar"></div>
-  <p class="body-text" style="margin-bottom:1.5rem">A selection of clients across SaaS, InsureTech, Fintech, and enterprise software.</p>
+  <p class="body-text" style="margin-bottom:1.5rem">A selection of clients we've worked with across SaaS, InsureTech, Fintech, and enterprise software.</p>
   <div class="clients-grid">
     <div class="client-card"><img src="cirrent.png" style="max-height:60px;max-width:100%;object-fit:contain"></div>
     <div class="client-card"><img src="infineon.png" style="max-height:60px;max-width:100%;object-fit:contain"></div>
-    <div class="client-card"><div class="client-logo-placeholder">take2</div></div>
-    <div class="client-card"><div class="client-logo-placeholder">fintech crowd</div></div>
-    <div class="client-card"><div class="client-logo-placeholder">insureme.lk</div></div>
-    <div class="client-card"><div class="client-logo-placeholder">Lynear Wealth</div></div>
-    <div class="client-card"><div class="client-logo-placeholder">Potenza</div></div>
-    <div class="client-card"><div class="client-logo-placeholder">DMAK</div></div>
+    <div class="client-card"><img src="signagetec.png" style="max-height:60px;max-width:100%;object-fit:contain"></div>
+    <div class="client-card"><img src="fintech crowd.png" style="max-height:60px;max-width:100%;object-fit:contain"></div>
+    <div class="client-card"><img src="insureme.png" style="max-height:60px;max-width:100%;object-fit:contain"></div>
+    <div class="client-card"><img src="lynear.png" style="max-height:60px;max-width:100%;object-fit:contain"></div>
+    <div class="client-card" style="background:#000;border-radius:8px"><img src="potenza.png" style="max-height:60px;max-width:100%;object-fit:contain"></div>
+    <div class="client-card"><img src="omak.png" style="max-height:60px;max-width:100%;object-fit:contain"></div>
   </div>
-  <div class="slide-num">07 / 10</div>
+  <div class="slide-num">06 / 09</div>
 </div>
 
 <!-- SLIDE 8: Services -->
-<div class="slide">
+<div class="slide" id="slide-services">
   <p class="slide-label">Services</p>
   <h2 class="slide-heading">What we build</h2>
   <div class="accent-bar"></div>
@@ -237,11 +219,11 @@
     </div>
   </div>
 
-  <div class="slide-num">08 / 10</div>
+  <div class="slide-num">07 / 09</div>
 </div>
 
 <!-- SLIDE 9: AI-assisted SDLC -->
-<div class="slide">
+<div class="slide" id="slide-ai-sdlc">
   <p class="slide-label">Our methodology</p>
   <h2 class="slide-heading">AI-assisted SDLC — more value, lower cost</h2>
   <div class="accent-bar"></div>
@@ -272,10 +254,10 @@
   <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1.25rem 1.5rem">
     <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7">The result for our clients: <span style="font-weight:500;color:var(--color-text-primary)">faster time-to-market, significantly reduced development costs, fewer post-launch defects,</span> and full visibility at every stage — from first spec to final deployment.</p>
   </div>
-  <div class="slide-num">09 / 10</div>
+  <div class="slide-num">08 / 09</div>
 </div>
 <!-- SLIDE 10: Contact -->
-<div class="slide">
+<div class="slide" id="slide-contact">
   <p class="slide-label">Contact us</p>
   <h2 class="slide-heading">Let's build something together</h2>
   <div class="accent-bar"></div>
@@ -299,7 +281,7 @@
       <p class="closing-sub">We work closely with a select number of clients at any given time — ensuring every engagement gets the focus it deserves. Reach out and let's explore how we can help.</p>
     </div>
   </div>
-  <div class="slide-num">10 / 10</div>
+  <div class="slide-num">09 / 09</div>
 </div>
 
 </div>
